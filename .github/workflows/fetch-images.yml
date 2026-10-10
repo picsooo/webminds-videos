@@ -21,4 +21,8 @@ jobs:
           PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
       - run: |
           git config user.name "picsooo"; git config user.email "wsaoudi705@gmail.com"
-          git add stock && git commit -m "stock images" && git pull --rebase && git push || echo "nothing to commit"
+          ls -R stock | head -50 | tr '\n' ' ' | sed 's/^/::warning::LS /'; echo
+          for l in stock/*/log.txt; do echo "::warning::$l $(tr '\n' '|' < $l | head -c 900)"; done
+          git add stock
+          git commit -m "stock images" || echo "::warning::commit failed"
+          git push 2>&1 | tr '\n' ' ' | sed 's/^/::warning::PUSH /'; echo
