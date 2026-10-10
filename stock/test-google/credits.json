@@ -1,0 +1,62 @@
+{
+ "stock/test-google/laptop-1.jpg": {
+  "by": "Remko van Dokkum / by 2.0",
+  "page": "https://www.flickr.com/photos/24034951@N00/3997730524",
+  "query": "laptop night typing"
+ },
+ "stock/test-google/laptop-2.jpg": {
+  "by": "BoredWithACamera / by 2.0",
+  "page": "https://www.flickr.com/photos/85979419@N04/9468927282",
+  "query": "laptop night typing"
+ },
+ "stock/test-google/laptop-3.jpg": {
+  "by": "Remko van Dokkum / by 2.0",
+  "page": "https://www.flickr.com/photos/24034951@N00/3997729812",
+  "query": "laptop night typing"
+ },
+ "stock/test-google/server-1.jpg": {
+  "by": "Leonardo Rizzi / by-sa 2.0",
+  "page": "https://www.flickr.com/photos/29479498@N05/2759159448",
+  "query": "server room"
+ },
+ "stock/test-google/server-2.jpg": {
+  "by": "torkildr / by-sa 2.0",
+  "page": "https://www.flickr.com/photos/8718930@N07/3462606643",
+  "query": "server room"
+ },
+ "stock/test-google/server-3.jpg": {
+  "by": "torkildr / by-sa 2.0",
+  "page": "https://www.flickr.com/photos/8718930@N07/3462607995",
+  "query": "server room"
+ },
+ "stock/test-google/office-1.jpg": {
+  "by": "zoovroo / by 2.0",
+  "page": "https://www.flickr.com/photos/68227549@N00/3379891088",
+  "query": "office desk night"
+ },
+ "stock/test-google/office-2.jpg": {
+  "by": "EvelynGiggles / by 2.0",
+  "page": "https://www.flickr.com/photos/23797059@N02/2847770266",
+  "query": "office desk night"
+ },
+ "stock/test-google/office-3.jpg": {
+  "by": "_Franck Michel_ / by 2.0",
+  "page": "https://www.flickr.com/photos/33634811@N07/35059960224",
+  "query": "office desk night"
+ },
+ "stock/test-google/money-1.jpg": {
+  "by": "401(K) 2013 / by-sa 2.0",
+  "page": "https://www.flickr.com/photos/68751915@N05/6757882889",
+  "query": "dollar bills"
+ },
+ "stock/test-google/money-2.jpg": {
+  "by": "Images_of_Money / by 2.0",
+  "page": "https://www.flickr.com/photos/59937401@N07/5929486139",
+  "query": "dollar bills"
+ },
+ "stock/test-google/money-3.jpg": {
+  "by": "soozafone / by 2.0",
+  "page": "https://www.flickr.com/photos/62198235@N04/7015948647",
+  "query": "dollar bills"
+ }
+}
