@@ -16,9 +16,9 @@ for name, q in spec.items():
             d = json.loads(get("https://pixabay.com/api/?" + urllib.parse.urlencode({"key": os.environ["PIXABAY_KEY"], "q": q, "orientation": "vertical", "image_type": "photo", "per_page": 3, "safesearch": "true"})))
             picks = [(h["largeImageURL"], f'{h["user"]} / Pixabay', h["pageURL"]) for h in d["hits"]]
         else:
-            d = json.loads(get("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "license_type": "commercial", "page_size": 3, "mature": "false"})))
+            d = json.loads(get("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "license": "cc0,pdm", "page_size": 6, "mature": "false"})))
             picks = [(r["url"], f'{r.get("creator")} / {r.get("license")} {r.get("license_version")}', r["foreign_landing_url"]) for r in d["results"]]
-        for i, (u, by, page) in enumerate(picks[:3]):
+        for i, (u, by, page) in enumerate(picks[:4]):
             fn = f"{out}/{name}-{i+1}.jpg"; open(fn, "wb").write(get(u)); credits[fn] = {"by": by, "page": page, "query": q}
         print(name, len(picks))
     except Exception as e:
