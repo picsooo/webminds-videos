@@ -1,10 +1,7 @@
 name: fetch-images
 on:
-  workflow_dispatch:
-    inputs:
-      batch: {description: "folder name", required: true}
-      source: {description: "pexels | pixabay | openverse", required: true, default: "openverse"}
-      spec: {description: 'JSON {"name":"query"}', required: true}
+  push:
+    paths: ["requests/*.json"]
 permissions:
   contents: write
 jobs:
@@ -12,10 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/fetch_images.py "${{ inputs.batch }}" "${{ inputs.source }}" '${{ inputs.spec }}'
+      - run: |
+          for f in requests/*.json; do
+            b=$(basename "$f" .json)
+            [ -d "stock/$b" ] && continue
+            python3 tools/fetch_images.py "$b" "$(python3 -c "import json;print(json.load(open('$f'))['source'])")" "$(python3 -c "import json;print(json.dumps(json.load(open('$f'))['spec']))")"
+          done
         env:
           PEXELS_KEY: ${{ secrets.PEXELS_KEY }}
           PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
       - run: |
           git config user.name "picsooo"; git config user.email "wsaoudi705@gmail.com"
-          git add stock && git commit -m "stock images: ${{ inputs.batch }}" && git pull --rebase && git push || echo "nothing to commit"
+          git add stock && git commit -m "stock images" && git pull --rebase && git push || echo "nothing to commit"
