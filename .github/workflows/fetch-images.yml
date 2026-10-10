@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: pip install pillow
       - run: |
           for f in requests/*.json; do
             b=$(basename "$f" .json)
