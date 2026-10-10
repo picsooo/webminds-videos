@@ -1,0 +1,21 @@
+name: fetch-images
+on:
+  workflow_dispatch:
+    inputs:
+      batch: {description: "folder name", required: true}
+      source: {description: "pexels | pixabay | openverse", required: true, default: "openverse"}
+      spec: {description: 'JSON {"name":"query"}', required: true}
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/fetch_images.py "${{ inputs.batch }}" "${{ inputs.source }}" '${{ inputs.spec }}'
+        env:
+          PEXELS_KEY: ${{ secrets.PEXELS_KEY }}
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+      - run: |
+          git config user.name "picsooo"; git config user.email "wsaoudi705@gmail.com"
+          git add stock && git commit -m "stock images: ${{ inputs.batch }}" && git pull --rebase && git push || echo "nothing to commit"
