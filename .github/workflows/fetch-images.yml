@@ -12,8 +12,9 @@ jobs:
       - run: |
           for f in requests/*.json; do
             b=$(basename "$f" .json)
-            [ -d "stock/$b" ] && continue
-            python3 tools/fetch_images.py "$b" "$(python3 -c "import json;print(json.load(open('$f'))['source'])")" "$(python3 -c "import json;print(json.dumps(json.load(open('$f'))['spec']))")"
+            if [ -d "stock/$b" ]; then continue; fi
+            mkdir -p "stock/$b"
+            python3 tools/fetch_images.py "$b" "$(python3 -c "import json;print(json.load(open('$f'))['source'])")" "$(python3 -c "import json;print(json.dumps(json.load(open('$f'))['spec']))")" > "stock/$b/log.txt" 2>&1 || true
           done
         env:
           PEXELS_KEY: ${{ secrets.PEXELS_KEY }}
