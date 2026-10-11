@@ -11,7 +11,9 @@ def get(url, headers=None):
 credits = {}
 for name, q in spec.items():
     try:
-        if source == "pexels":
+        if source == "urls":
+            picks = [(q, "generated", "")]
+        elif source == "pexels":
             d = json.loads(get("https://api.pexels.com/v1/search?" + urllib.parse.urlencode({"query": q, "orientation": "portrait", "per_page": 3}), {"Authorization": os.environ["PEXELS_KEY"]}))
             ph = d["photos"]; picks = [(p["src"]["large2x"], f'{p["photographer"]} / Pexels', p["url"]) for p in ph]
         elif source == "pixabay":
@@ -21,9 +23,9 @@ for name, q in spec.items():
             d = json.loads(get("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "license": "cc0,pdm", "page_size": 6, "mature": "false"})))
             picks = [(r["url"], f'{r.get("creator")} / {r.get("license")} {r.get("license_version")}', r["foreign_landing_url"]) for r in d["results"]]
         for i, (u, by, page) in enumerate(picks[:4]):
-            fn = f"{out}/{name}-{i+1}.jpg"
+            fn = f"{out}/{name}.jpg" if source == "urls" else f"{out}/{name}-{i+1}.jpg"
             try:
-                im = Image.open(io.BytesIO(get(u))).convert("RGB"); im.thumbnail((1600, 1600)); im.save(fn, quality=88)
+                im = Image.open(io.BytesIO(get(u))).convert("RGB"); im.thumbnail((2400, 2400)); im.save(fn, quality=88)
                 credits[fn] = {"by": by, "page": page, "query": q}
             except Exception as e: print(name, i, "skip", e)
         print(name, len(picks)); time.sleep(4)
