@@ -1,0 +1,32 @@
+{
+ "stock/ai-google/hoodie.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/t2QmXoS6wkvgDEZGJAbb/xQtIilAuu2Kv61NHFa9V/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000839Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=2fc698c76a9dc8b5802bea70034cbac39ff884e06d4aa66032d175b3fba1a529d8f1913a5c53dfad22546c9d7461bb9350882d6aca073bfa783bb007787db09422f48442e9064134540ca2dd02a4d525f8202f9de549c98d02baa26a185aada02a1f67ca2604acaa598f51595c05789d8d62033987ab29acbcd05aa449389c0c986334926590996497ed56a952e5d4c4ad0a33c4332410abd8c52bfe886bb59a7c3e244a6e303ceaf01ead56758ce8f57f28c2d604ce03a33d6cc4bfe263ffbfbbee871ceac28ca0503c2954d64b4580ba1569ff35b8e1973e8cf290d340d3d659d787f762fbf03e95c104dbab8c65586afc3cd060cb7293e6d9591370681252"
+ },
+ "stock/ai-google/card.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/H9Hy8QuwcJulARK0q6FG/OjmSTrARLvMVR6OHZQ5U/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000842Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=74d4b714e1ac7ec7a50dca5b10bab00654237350f1c94467f7b10ae91492abe2f7ad86df6ee898b9ea358b5c03fb0bf1364d4e9ad84f715c9a1d42fc18ab1e83b8584414cfa62fecc5810e1019ce7adc2bbbeda276c68c955662142ad776cdffcb57110edd1673481e45d3688276f6b989d94537ad7e266c66718ed3f63571f7491b973c33153b7996cd485a2537b45137ca5de979c7c5f067c4287f35b0b9168dd18067144ed706ae1c4f6f1adcadf273b87c442105fe769515601b7b97c17bdb16e71953826ecfd4b9d6d766cf81fe332c08c41f488707cd987f6a43f118063ecaca36b97675a9da75095a3ed4fd4f86b1ebc242d59187da8a1491929162e8"
+ },
+ "stock/ai-google/emails.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/OERRm0aBTNzlRAKpO9p6/k62hgCn7aObxV80bCNeo/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000908Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=08c2bb7ee8cee0a51323c862b44199b6206d2457dc9f306fb46dfa7b2dcd6327665791c57a44377e3240eaec76dbe511fca4b5d235291077c95a990571b8bda8cc50db28976d7598fc999e632b4765556fd592ea7d0b4913f5349e11c10f0889ae9187b392949aba4672dfc6acd7ff01945334fe1c3b6a3408d5fad7977dbf62e965af4f9e9143e2bb7c6993254f7238ff5e4c6016cfe6f6a287299d000354468a0a349f1babc8e094aab418cd05bb493fabd96cc0eb02ba51ea2c305bcbf8eeabb30e89fc5a41b05ac83ed743e5bb6db5cac08eb548acaf886773d06ec4dc1dd1c2fb63906ba97a264e157b74bd7b292a447054215f0d66bac4381b9a6eec46"
+ },
+ "stock/ai-google/security.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/VSOCx9LW8RPLAVEnNMNV/qIzvvZ7E8f8Yz31YCkFB/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000852Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=5ae6957e0972b736296a721329e0b331c83b4ae8cb2cfc824ff4d0d862c26d87be23bf50c087dfbfc17447efd757deb613ad2ffd9e74dbb25620d80f4b7e3ed368941263537c174a3021b307821630d3ef57770c38a88b9bd59a78fd085ea9924c3e2533da8bd3a581b868fa16997200c4f420ef6048525411b469bd3af0f6ebe29ee2c8e0bee7ca150e873ce711446f3162f97647d66c8fa13591739c35d28a837df2539e052316f6f87de5c68f17aed6c1e91d7e39dc817b4d07ff61d4a637e30d5f72fc2b5b16bf1b3d184bc8cb3dbb2025f88c6d46d5950b9b49e4171f5aca78a7b14c73c80f7b39196675afecb302838b5194f8f4e156232e7aca21aeae"
+ },
+ "stock/ai-google/donation.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/whu9WaEQFZOGhd2Cu2z6/KLTqVMZHMkf1VuxwU68f/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000848Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=7e257a3894f67379b2f836031491736903d77831db726ac21fb719c2cf8650a7b6b5cf9633e514c957b4e89756601dceee4a3d1e483cd50f43dc6c0febc2b83cc617be1c048d242331eaddaa92a8b96040c49662bd20cd49734abfd78f520560ece02456210c95ebd136fc65d8994d2d9e806072b1a1218e31dcd43d7c3cb6cd640ac881949856af07b7301a27e6a2315d2df727d964c0cc41ac60a8fe5d9d2e060ca4118e8e7e2ee0cc00659ecf270dce99c618ddc36b6cdaad95eedab36e34bdaf9e1466fabf0dfa3f3ae4d9e90e794d46abb8a3b84518fb0b4a1008a5ac9dda9bc913173c2a3f0ffa0de7e8919884a462be417b6edd7b25f64c3c28bd7f04"
+ },
+ "stock/ai-google/hourglass.jpg": {
+  "by": "generated",
+  "page": "",
+  "query": "https://storage.googleapis.com/xi-backend/database/workspace/545087064ffa44cea442dcf3ce39e099/content_generation/KZXocB6TWNlMK5mUNfTO/GBdn3IBL1UVrGj24x8vh/content.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261011%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261011T000850Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=3bc091838db08e87d3070c97c4f9ea626756799ee68741ceca9d6734436c891c7d97a017d84f94b866c5dc9295708b6ef25c517149f97bf241fc5d1304411a4e61d9cd5a582adf97da4723015f179340a0285977676b85d6e7d8f4b76284cee459705a93c961762821bfd295e9adfe99b9aeb9df7d539af11e56ed7502e5e029e6fac3d9352894640801c70edda2a7916233fbbf39adb31cd771511893d129de8baf68330221d6a9ae2a545caf945532ecb170d1c08d76e47ec73ab3ec45a7d38d1f87309f6673acfcb40fa5a3b03eb4bd8e5e4cc4b22aaacde436dcbef1a5229d6c94f68ea3e7677aa91d49e9d0ca2392036f1efd3ea5f91a742530bb61b62d"
+ }
+}
