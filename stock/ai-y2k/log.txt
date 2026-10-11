@@ -1,0 +1,7 @@
+living 1
+mainframe 1
+crt 1
+blackout 1
+office 1
+fireworks 1
+hourglass 1
