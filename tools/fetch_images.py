@@ -11,7 +11,7 @@ def get(url, headers=None):
 credits = {}
 for name, q in spec.items():
     try:
-        if source == "urls":
+        if source in ("urls", "files"):
             picks = [(q, "generated", "")]
         elif source == "pexels":
             d = json.loads(get("https://api.pexels.com/v1/search?" + urllib.parse.urlencode({"query": q, "orientation": "portrait", "per_page": 3}), {"Authorization": os.environ["PEXELS_KEY"]}))
@@ -25,6 +25,8 @@ for name, q in spec.items():
         for i, (u, by, page) in enumerate(picks[:4]):
             fn = f"{out}/{name}.jpg" if source == "urls" else f"{out}/{name}-{i+1}.jpg"
             try:
+                if source == "files":
+                    open(f"{out}/{name}", "wb").write(get(u)); credits[name] = {"by": by}; continue
                 im = Image.open(io.BytesIO(get(u))).convert("RGB"); im.thumbnail((2400, 2400)); im.save(fn, quality=88)
                 credits[fn] = {"by": by, "page": page, "query": q}
             except Exception as e: print(name, i, "skip", e)
