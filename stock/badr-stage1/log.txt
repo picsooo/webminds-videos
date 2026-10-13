@@ -1,0 +1,2 @@
+sA.png 1
+sB.png 1
