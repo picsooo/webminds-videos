@@ -1,0 +1,8 @@
+l1.png 1
+l2.png 1
+l3.png 1
+l4.png 1
+l5.png 1
+s1.png 1
+s2.png 1
+s3.png 1
