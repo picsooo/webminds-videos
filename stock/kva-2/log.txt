@@ -1,0 +1,4 @@
+kva-a-dark.png 1
+kva-b-dark.png 1
+kva-c-dark.png 1
+kva-vo-dz15.mp3 1
