@@ -1,0 +1,5 @@
+lion.png 1
+excite.png 1
+twam.png 1
+astrat.png 1
+anfal.png 1
