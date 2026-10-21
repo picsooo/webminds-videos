@@ -1,0 +1,3 @@
+kitchen.png 1
+grease.png 1
+glass.png 1
