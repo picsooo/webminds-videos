@@ -1,0 +1,14 @@
+moud 0
+aln2 0
+maquis 0
+indep62 0
+juillet 0
+maqam 12
+aures 12
+casbah 4
+drapeau 5
+benmhidi 12
+didouche 12
+benboulaid 12
+hassiba 12
+zighoud 12
