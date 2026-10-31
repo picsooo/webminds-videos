@@ -1,0 +1,17 @@
+war 2 skip HTTP Error 429: Too many requests (f061ab2)
+war 3 skip HTTP Error 429: Too many requests (f061ab2)
+war 4 skip HTTP Error 429: Too many requests (f061ab2)
+war 7 skip HTTP Error 429: Too many requests (f061ab2)
+war 11 skip HTTP Error 429: Too many requests (f061ab2)
+war 12
+aln 0
+fln 1 skip HTTP Error 429: Too many requests (f061ab2)
+fln 2 skip HTTP Error 429: Too many requests (f061ab2)
+fln 7 skip HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+fln 9 skip HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+fln 10 skip HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+fln 11
+indep 0
+maqam 0
+fear 0 skip HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+fear 2

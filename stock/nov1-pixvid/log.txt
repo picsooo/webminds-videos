@@ -1,0 +1,3 @@
+alg ERROR HTTP Error 400: Bad Request
+algiers ERROR HTTP Error 400: Bad Request
+flag ERROR HTTP Error 400: Bad Request
