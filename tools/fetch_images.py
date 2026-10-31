@@ -4,7 +4,7 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 batch, source, spec = sys.argv[1], sys.argv[2], json.loads(sys.argv[3])  # spec: {"name": "query", ...}
 out = f"stock/{batch}"; os.makedirs(out, exist_ok=True)
-UA = {"User-Agent": "webminds-videos/1.0"}
+UA = {"User-Agent": "webminds-videos/1.0 (https://webminds.dz; contact@webminds.dz)"}
 def get(url, headers=None):
     req = urllib.request.Request(url, headers={**UA, **(headers or {})})
     with urllib.request.urlopen(req, timeout=30) as r: return r.read()
@@ -25,7 +25,7 @@ for name, q in spec.items():
                 prm = {"generator": "categorymembers", "gcmtitle": q, "gcmtype": "file", "gcmlimit": 30}
             else:
                 prm = {"generator": "search", "gsrsearch": q, "gsrnamespace": 6, "gsrlimit": 30}
-            prm.update({"action": "query", "prop": "imageinfo", "iiprop": "url|extmetadata|mime", "iiurlwidth": 1600, "iiextmetadatafilter": "LicenseShortName|Artist|ImageDescription|DateTimeOriginal", "format": "json"})
+            prm.update({"action": "query", "prop": "imageinfo", "iiprop": "url|extmetadata|mime", "iiurlwidth": 1280, "iiextmetadatafilter": "LicenseShortName|Artist|ImageDescription|DateTimeOriginal", "format": "json"})
             d = json.loads(get(api + urllib.parse.urlencode(prm)))
             picks = []
             for pg in (d.get("query", {}).get("pages", {}) or {}).values():
@@ -58,6 +58,7 @@ for name, q in spec.items():
             try:
                 if source == "files":
                     open(f"{out}/{name}", "wb").write(get(u)); credits[name] = {"by": by}; continue
+                if source == "commons": time.sleep(2.5)
                 im = Image.open(io.BytesIO(get(u))).convert("RGB"); im.thumbnail((2400, 2400)); im.save(fn, quality=88)
                 credits[fn] = {"by": by, "page": page, "query": q}
             except Exception as e: print(name, i, "skip", e)
